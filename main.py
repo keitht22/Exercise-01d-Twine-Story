@@ -47,7 +47,7 @@ def render(current):
 def get_input(current):
     choice = input("\nWhat would you like to do? (type quit to exit) ")
     choice = choice.lower()
-    if choice in ["quit","q","exit"]:
+    if choice in ["quit","q","exit"] and current["pid"] == "5":
         return "quit"
     return choice
 
