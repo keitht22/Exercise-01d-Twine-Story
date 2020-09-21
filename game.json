@@ -4,22 +4,22 @@
       "text": "You are in the main square of the town of Fortune, the streets are pretty much deserted, except for a few of the townspeople.\n\nTo your left, is the saloon, The Crazy Uncle.\nTo your right, the County Jail, the Sheriff's name is Bill Barney.\nIn front of you, is the Town Hall, where Mayor Jeffrey H. Hann keeps his office; and the Honerable Judge James West resides over the County Court.\nDirectly behind you, the train station, which you can use to exit The Town of Fortune (THIS WILL EXIT THE GAME).\n\n[[Enter Saloon ->Saloon]]\n[[Enter Town Hall ->Town Hall]] \n[[Enter the Jail ->Jail]] \n[[Leave Town ->Train Station]]",
       "links": [
         {
-          "name": "Enter Saloon",
+          "name": "Enter Saloon ",
           "link": "Saloon",
           "pid": "2"
         },
         {
-          "name": "Enter Town Hall",
+          "name": "Enter Town Hall ",
           "link": "Town Hall",
           "pid": "3"
         },
         {
-          "name": "Enter the Jail",
+          "name": "Enter the Jail ",
           "link": "Jail",
           "pid": "4"
         },
         {
-          "name": "Leave Town",
+          "name": "Leave Town ",
           "link": "Train Station",
           "pid": "5"
         }
@@ -27,13 +27,23 @@
       "name": "Town Square",
       "pid": "1",
       "position": {
-        "x": "710",
-        "y": "346"
+        "x": "688.3333333333334",
+        "y": "366"
       }
     },
     {
-      "text": "Patrons are seated at the bar and several tables. Most are drinking beer from glasses, but several are 'enjoying' the locally distilled whiskey.\n[[Leave ->Town Square]] ",
+      "text": "Patrons are seated at the bar and several tables. Most are drinking beer from glasses, but several are 'enjoying' the locally distilled whiskey.\n\nYou can talk to the Bartender or Fats.\n\n[[Fats->Fats]]\n[[Bartender->Bartender Dialogue]]\n[[Leave->Town Square]] \n",
       "links": [
+        {
+          "name": "Fats",
+          "link": "Fats",
+          "pid": "8"
+        },
+        {
+          "name": "Bartender",
+          "link": "Bartender Dialogue",
+          "pid": "9"
+        },
         {
           "name": "Leave",
           "link": "Town Square",
@@ -74,8 +84,13 @@
       }
     },
     {
-      "text": "The county jail, the Sheriff is holding the local drunk until he sobers up.\n[[Leave->Town Square]] ",
+      "text": "The county jail, the Sheriff is holding a local drunk until he sobers up.\n\n[[Sheriff->Sheriff]]\n[[Leave->Town Square]] ",
       "links": [
+        {
+          "name": "Sheriff",
+          "link": "Sheriff",
+          "pid": "13"
+        },
         {
           "name": "Leave",
           "link": "Town Square",
@@ -85,15 +100,15 @@
       "name": "Jail",
       "pid": "4",
       "position": {
-        "x": "1022",
-        "y": "343"
+        "x": "1027",
+        "y": "366.3333333333333"
       }
     },
     {
       "text": "Input 'q' to exit the game, or return to town.\n[[Return to Town ->Town Square]] ",
       "links": [
         {
-          "name": "Return to Town",
+          "name": "Return to Town ",
           "link": "Town Square",
           "pid": "1"
         }
@@ -101,8 +116,8 @@
       "name": "Train Station",
       "pid": "5",
       "position": {
-        "x": "750",
-        "y": "528"
+        "x": "800.3333333333334",
+        "y": "995.3333333333334"
       }
     },
     {
@@ -117,8 +132,8 @@
       "name": "Mayor's Office",
       "pid": "6",
       "position": {
-        "x": "928",
-        "y": "176"
+        "x": "893",
+        "y": "44.33333333333333"
       }
     },
     {
@@ -133,8 +148,155 @@
       "name": "Courtroom",
       "pid": "7",
       "position": {
-        "x": "762",
-        "y": "35"
+        "x": "590.3333333333333",
+        "y": "21.666666666666657"
+      }
+    },
+    {
+      "text": "*Buuuuuuuuuuurrrrrp* H-Hey strangerrr! I's is Fats! But most people call me Fats! Hehe, oops! \n\nHey, Buddy... Do you know where Lennie is? He went out to crack a piss a few hours ago, and hasn't come back. \n\n[[Jail->Fats is Grateful]]\n",
+      "links": [
+        {
+          "name": "Jail",
+          "link": "Fats is Grateful",
+          "pid": "10"
+        }
+      ],
+      "name": "Fats",
+      "pid": "8",
+      "position": {
+        "x": "425",
+        "y": "497"
+      }
+    },
+    {
+      "text": "Buy something or get out!\n[[Leave->Saloon]] ",
+      "links": [
+        {
+          "name": "Leave",
+          "link": "Saloon",
+          "pid": "2"
+        }
+      ],
+      "name": "Bartender Dialogue",
+      "pid": "9",
+      "position": {
+        "x": "575",
+        "y": "497"
+      }
+    },
+    {
+      "text": "HAHAHA what a moron! Thanks for the help stranger. You know, if you keep helping people like me, folks' opinion a you'll raise! This town has everything a fella suchs yourselfs could hope to get from the world.\n\n[[I'm just a drifter->Fats is Disappointed]]\n[[I'm going to run for Mayor->Fats is Excited]]",
+      "links": [
+        {
+          "name": "I'm just a drifter",
+          "link": "Fats is Disappointed",
+          "pid": "11"
+        },
+        {
+          "name": "I'm going to run for Mayor",
+          "link": "Fats is Excited",
+          "pid": "12"
+        }
+      ],
+      "name": "Fats is Grateful",
+      "pid": "10",
+      "position": {
+        "x": "321.99999999999994",
+        "y": "648.3333333333333"
+      }
+    },
+    {
+      "text": "Oh okay, well then safe travels I guess... If you change your mind and decide you want to <u>Make something of your life</u> then come back and talk to me again!\n\n[[Leave->Saloon]] \n",
+      "links": [
+        {
+          "name": "Leave",
+          "link": "Saloon",
+          "pid": "2"
+        }
+      ],
+      "name": "Fats is Disappointed",
+      "pid": "11",
+      "position": {
+        "x": "58.66666666666664",
+        "y": "768.3333333333334"
+      }
+    },
+    {
+      "text": "You'll need some money ifn you plan on seeking political office. Hmmmmm...\n\nI GOT IT! MY BOY LENNIE CAN HELP YOU OUT! Let's go to the jail and get him.\n\n[[OK->Lennie]]",
+      "links": [
+        {
+          "name": "OK",
+          "link": "Lennie",
+          "pid": "14"
+        }
+      ],
+      "name": "Fats is Excited",
+      "pid": "12",
+      "position": {
+        "x": "460.3333333333333",
+        "y": "756.6666666666666"
+      }
+    },
+    {
+      "text": "Can I help you, Stranger? I'm the Sheriff around these parts, name's Barney, Bill Barney.\n\nListen, I don't mean any insult partner, but if there's nothing you need, I'll have to kindly ask you to leave.\n\n[[Leave->Town Square]] ",
+      "links": [
+        {
+          "name": "Leave",
+          "link": "Town Square",
+          "pid": "1"
+        }
+      ],
+      "name": "Sheriff",
+      "pid": "13",
+      "position": {
+        "x": "887",
+        "y": "489.6666666666666"
+      }
+    },
+    {
+      "text": "*He's asleep on the bench inside of a cell which takes up about a third of the room*\n\n*Fats bangs his fist on the cell bars*\n\n\"Wha?! Mommy I don't wanna go to school! Oh, it's you Fats, and who's this Stranger you've got with you?\"\n\n\"This is my new friend, he helped me find you... We owe him, so I thought you could let him in on that thing you're working on. This guy's gonna be Mayor of Fortune, I can tell!\"\n\n\"Oh that... are you sure you're cut out for it?\"\n\n[[For what?->Lennie is sober]]",
+      "links": [
+        {
+          "name": "For what?",
+          "link": "Lennie is sober",
+          "pid": "15"
+        }
+      ],
+      "name": "Lennie",
+      "pid": "14",
+      "position": {
+        "x": "1303.6666666666667",
+        "y": "596.6666666666665"
+      }
+    },
+    {
+      "text": "You and Fats follow Lennie on foot for a few hours, during your journey you discuss topics such as politics and pop culture.\n\nFinally, you come upon a river and not far off is a small one room shack.\n\n\"I'm a prospector, and these hills are rich with gold, more than any one man could know what to do with.\"\n\n\"Since you helped me find Lennie, we decided to help you get a job!\"\n\n<b>If you return to town, you will not be able to come back, so work here for a few days at least!</b>\n\nWhat do you say?\n\n[[Let's get started->Payday]]\n[[Leave->Town Square]] ",
+      "links": [
+        {
+          "name": "Let's get started",
+          "link": "Payday",
+          "pid": "16"
+        },
+        {
+          "name": "Leave",
+          "link": "Town Square",
+          "pid": "1"
+        }
+      ],
+      "name": "Lennie is sober",
+      "pid": "15",
+      "position": {
+        "x": "1313.6666666666667",
+        "y": "246.66666666666654"
+      }
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "Payday",
+      "pid": "16",
+      "position": {
+        "x": "1522",
+        "y": "271.6666666666666"
       }
     }
   ],
